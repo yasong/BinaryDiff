@@ -1,2 +1,25 @@
 # BinaryDiff
-Implementing distinguish differences  between binary files with python.
+Implementing a program to distinguish differences between binary files with python.
+</br>
+</br>
+```python
+#coding at every weekend 
+```
+
+```bash
+=====================================================================================================
+                                                        //-\\
+                                                       //---\\
+                                                      //-----\\
+                                                     //-------\\
+                                                    //---------\\
+                                                   //-----------\\
+                                                  //-------------\\
+                                                 //---------------\\
+                                                //---LOVE CODING---\\
+                                               //ARE YOU KIDDING ME?\\
+                                               \\-------------------//
+                                                \\-----------------//
+                                                 \\---------------//
+======================================================================================================
+```
