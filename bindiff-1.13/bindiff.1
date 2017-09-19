@@ -1,0 +1,76 @@
+.\"
+.\"
+.\"  To format this reference page, use the command:
+.\"
+.\"    nroff -man bindiff.1
+.\"
+.\"  $Header: /home/hugh/sources/misc/bindiff/bindiff.1,v 1.2 2008/03/20 02:23:58 hugh Exp hugh $
+.\"
+.\"
+.TH bindiff 1 "" "" "" ""
+.SH NAME
+bindiff \- simple binary diff utility
+.SH SYNOPSIS
+.B bindiff 
+[
+.I --version 
+]  [
+.I --help
+]  [
+.I -s 
+]  file1 file2
+.ta
+.fi
+.ad b
+.SH DESCRIPTION
+The command 
+.I bindiff 
+will display the differences between two binary files as a hex dump and with 
+printable ASCII characters on the right side.
+.PP
+Note that large files may take a long time for the differences to be 
+determined and displayed.  
+.I bindiff 
+reads the entire contents of the files into memory to find the 
+differences.
+.\"
+.\"
+.\"
+.SH OPTIONS
+The following are options specific to 
+.IR bindiff :
+.TP 8
+.B \--help 
+Causes help information to be displayed
+.TP 8
+.BI \-s " number"
+Specifies the minimum number of bytes that must match in order to no 
+longer be different.  The default value is 8.  Note that making this 
+value smaller can either increase or reduce the number of differences 
+found.  
+.TP 8
+.B \--version
+Causes version information to be displayed
+.BR .cutview .
+.\"
+.\"
+.\"
+.SH NOTES
+The lines of a text file provide a pattern for searching for common 
+content.  Binary files, unless of a specific format, do not provide 
+such patterns for comparison, so 
+.I bindiff 
+simply searches for data that is the same in both files.  Changing 
+the number of bytes required to match to end a diff by using the 
+.I -s 
+option can change the results of the search 
+significantly, sometimes in unexpected ways.  
+.\"
+.\"
+.\"
+.SH AUTHOR
+.PP
+The software 
+.I bindiff 
+was developed by Hugh Mahon.
+
